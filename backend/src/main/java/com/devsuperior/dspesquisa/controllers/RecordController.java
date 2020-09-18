@@ -34,11 +34,11 @@ public class RecordController {
 		return ResponseEntity.ok().body(newDTO);
 	}
 
-	//{{host}}/records?min=2020-01-01T00:00:00Z&max=2020-07-31T00:00:00Z&page=0&linesPerPage=20&orderBy=moment&direction=DESC
+
 	@GetMapping
 	public ResponseEntity<Page<RecordDTO>> findAll(
 			@RequestParam(value = "min", defaultValue = "") String min,
-			@RequestParam(value = "max", defaultValue = "moment") String max,
+			@RequestParam(value = "max", defaultValue = "") String max,
 			@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "0") Integer linesPerPage,
 			@RequestParam(value = "orderBy", defaultValue = "moment") String orderBy,
