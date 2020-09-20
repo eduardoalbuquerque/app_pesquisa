@@ -6,7 +6,7 @@ import { formatDate } from './helpers';
 import Pagination from './pagination';
 import Filter from '../../components/Filters';
 
-const BASE_URL = 'http://localhost:8080'
+const BASE_URL = 'https://webdevbrasil.herokuapp.com';
 
 const Records = () => {
 
